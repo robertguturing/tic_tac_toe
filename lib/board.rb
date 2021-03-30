@@ -1,12 +1,8 @@
 class Board
-  attr_accessor :spaces
+  attr_reader :spaces
 
   def initialize
     @spaces = ['', '', '', '', '', '', '', '', '']
-  end
-
-  def spaces
-    @spaces
   end
 
   def mark(piece, position)
